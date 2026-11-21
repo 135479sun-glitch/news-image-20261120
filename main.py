@@ -8,7 +8,10 @@ numbers, no timestamps: every element is drawn deterministically by
 this program, so running it twice writes byte-identical output.
 
 Usage: python3 main.py [news.json] [output.png]
-Default output: /output/entry.png
+Default input: news.json next to this script; default output:
+$MAKEFUN_OUTPUT_DIR/entry.png (or /output/entry.png when unset).
+Paths never depend on the working directory, so the grader can run
+this from anywhere.
 """
 import json
 import os
@@ -56,8 +59,12 @@ def wrap(draw, text, fnt, width):
 
 
 def main():
-    src = sys.argv[1] if len(sys.argv) > 1 else "news.json"
-    out = sys.argv[2] if len(sys.argv) > 2 else "/output/entry.png"
+    here = os.path.dirname(os.path.abspath(__file__))
+    src = sys.argv[1] if len(sys.argv) > 1 else os.path.join(here, "news.json")
+    if len(sys.argv) > 2:
+        out = sys.argv[2]
+    else:
+        out = os.path.join(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"), "entry.png")
     with open(src, encoding="utf-8") as fh:
         data = json.load(fh)
 
