@@ -27,12 +27,12 @@ This writes `/output/entry.png` (1024×1024 PNG, ≤ 1 MiB). Pure Python + Pillo
 
 ## Stories (checked against public reporting for 20 Nov 2026)
 
-1. World Court rules Myanmar committed genocide against the Rohingya (The Hague)
-2. Trump, Xi and Putin hold first three-way summit (Shenzhen)
-3. Russia launches huge overnight barrage on Ukraine (Kyiv)
-4. Anthropic debuts on Nasdaq as stocks slide (New York)
-5. Houthi missile damages Riyadh's tallest tower (Riyadh)
-6. Russian missiles fall in Poland as NATO jets scramble (Poland)
+1. ICJ Rules Myanmar Committed Genocide (The Hague)
+2. Trilateral Peace Declaration Signed in Shenzhen (Shenzhen)
+3. Russia Launches Massive Strike on Ukraine (Kyiv)
+4. Anthropic Debuts on Nasdaq (New York)
+5. Houthi Missile Strikes Riyadh Tower (Riyadh)
+6. NATO Jets Scramble After Poland Strike (Poland)
 
 Sources: Al Jazeera, CNN, The Wall Street Journal, Kyiv Independent, NHK World, The National, Dawn, Associated Press.
 
